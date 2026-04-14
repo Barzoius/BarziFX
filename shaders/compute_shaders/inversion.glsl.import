@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://t7ea3o6dq8ij"
+path="res://.godot/imported/inversion.glsl-759486fe22fba30b501ff76e19548733.res"
+
+[deps]
+
+source_file="res://shaders/compute_shaders/inversion.glsl"
+dest_files=["res://.godot/imported/inversion.glsl-759486fe22fba30b501ff76e19548733.res"]
+
+[params]
+
