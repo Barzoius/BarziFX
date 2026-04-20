@@ -1,5 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://dko3ircvaabhf"]
+[gd_scene load_steps=18 format=3 uid="uid://dko3ircvaabhf"]
 
+[ext_resource type="Script" uid="uid://bgk40xo2jqpy" path="res://scripts/compositor_effects/invertion.gd" id="1_ia1lp"]
 [ext_resource type="Texture2D" uid="uid://c3j35beqfcq21" path="res://textures/pic1.png" id="2_ia1lp"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6adnx"]
@@ -15,7 +16,18 @@ sky = SubResource("Sky_uhqqe")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="CompositorEffect" id="CompositorEffect_sasra"]
+resource_local_to_scene = false
+resource_name = ""
+enabled = true
+effect_callback_type = 4
+needs_motion_vectors = false
+needs_normal_roughness = false
+script = ExtResource("1_ia1lp")
+metadata/_custom_type_script = "uid://bgk40xo2jqpy"
+
 [sub_resource type="Compositor" id="Compositor_6adnx"]
+compositor_effects = Array[CompositorEffect]([SubResource("CompositorEffect_sasra")])
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ia1lp"]
 albedo_color = Color(0.3248, 0.6, 0.084, 1)
