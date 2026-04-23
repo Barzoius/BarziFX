@@ -1,2 +1,7 @@
 # BarziFX
-A set of compositor effects for godot.
+
+
+|<img src = "imgs/img1.png" width = "120px"> | **BarziFX** |
+|-------------------------------|-------------|
+
+A set of post processing effects.
